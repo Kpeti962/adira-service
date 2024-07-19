@@ -5,31 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-primary">
+  <body class="body bg-primary">
     <header>
-      <nav
-        class="flex h-24 w-full items-center z-10 bg-white text-primary justify-between"
-      >
-        <div>
-          <img src="./assets/logo.png" alt="" class="h-16" />
+      <nav class="flex h-24 items-center z-100 bg-white text-primary">
+        <div class="">
+          <img src="./assets/logo.png" alt="" class="h-16 min-w-max" />
         </div>
-        <div class="flex flex-col float-right">
-          <div class="tham tham-e-squeeze tham-w-10 mr-2">
-            <div class="tham-box">
-              <div class="tham-inner" />
+        <div class="z-20 bg-none w-full">
+          <ul class="justify-evenly hidden md:flex w-full">
+            <li>Gépek</li>
+            <li>Alkatrészek</li>
+            <li>Szerviz</li>
+            <li>Kapcsolat</li>
+          </ul>
+        </div>
+        <div class="flex flex-col md:hidden">
+          <div class="min-h-screen bg-gray-100 flex flex-col justify-center">
+            <div class="relative py-3 sm:max-w-xl mx-auto">
+              <nav x-data="{ open: false }">
+                <button
+                  class="tham w-14 h-14 relative focus:outline-none bg-teal-600 rounded"
+                  @click="open = !open"
+                >
+                  <div
+                    class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'rotate-45': open,' -translate-y-1.5': !open }"
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-5 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'opacity-0': open } "
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
+                    ></span>
+                  </div>
+                </button>
+              </nav>
             </div>
           </div>
-
-          
-            <ul
-              class="tnav hidden flex flex-col justify-evenly bg-secondary w-80 h-96 text-center absolute z-20 left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2"
-            >
-              <li>Gépek</li>
-              <li>Alkatrészek</li>
-              <li>Szerviz</li>
-              <li>Kapcsolat</li>
+          <div
+            class="thamnav z-20 hidden flex-col bg-secondary w-80 h-96 text-center fixed left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2"
+          >
+            <ul class="flex flex-col h-full justify-evenly md:flex-row">
+              <div
+                class="relative p-3 text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Gépek</span>
+              </div>
+              <div
+                class="relative p-3 text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Alkatrészek</span>
+              </div>
+              <div
+                class="relative p-3 text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Szerviz</span>
+              </div>
+              <div
+                class="relative p-3 text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Kapcsolat</span>
+              </div>
             </ul>
-          
+          </div>
         </div>
       </nav>
     </header>
@@ -38,6 +81,53 @@
         <source src="./assets/intro.mp4" />
       </video>
     </div>
+    <section class="text-white">
+      <h2 class="text-5xl text-center mt-16">Gépek</h2>
+      <div
+        class="h-screen w-full flex items-center justify-center overflow-hidden"
+      >
+        <div
+          class="relative lg:w-[290px] lg:h-[290px] md:w-[220px] md:h-[220px] sm:w-[180px] sm:h-[180px] w-[100px] h-[100px] [transform-style:preserve-3d] animate-[rotate_30s_linear_infinite]"
+        >
+          <span style="--i: 1" class="span-style"
+            ><img
+              src="./assets/Adira/adira-BB-ATC-front.png"
+              alt="img - 1"
+              class="img-style"
+          /></span>
+          <span style="--i: 2" class="span-style"
+            ><img
+              src="./assets/Adira/adira-BB-front.png"
+              alt="img - 2"
+              class="img-style"
+          /></span>
+          <span style="--i: 3" class="span-style"
+            ><img
+              src="./assets/Adira/adira-GV-front.png"
+              alt="img - 3"
+              class="img-style"
+          /></span>
+          <span style="--i: 4" class="span-style"
+            ><img
+              src="./assets/Adira/adira-PA-front.png"
+              alt="img - 4"
+              class="img-style"
+          /></span>
+          <span style="--i: 5" class="span-style"
+            ><img
+              src="./assets/Adira/adira-PF-front.png"
+              alt="img - 5"
+              class="img-style"
+          /></span>
+          <span style="--i: 6" class="span-style"
+            ><img
+              src="./assets/Adira/adira-PH-front.png"
+              alt="img - 6"
+              class="img-style"
+          /></span>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="mt-20 mb-20 text-white w-3/6 m-auto text-center">
         <h1 class="text-5xl mb-12">Rólunk</h1>
@@ -97,14 +187,19 @@
       </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script>
       const tham = document.querySelector('.tham');
-      const tnav = document.querySelector('.tnav');
+      const thambutton = document.querySelector('.thambutton');
+      const thamnav = document.querySelector('.thamnav');
+      const body = document.querySelector('.body');
 
       tham.addEventListener('click', () => {
-        tham.classList.toggle('tham-active');
-        tnav.classList.toggle('hidden');
+        thamnav.classList.toggle('hidden');
+      
+        
       });
+      
     </script>
   </body>
 </html>

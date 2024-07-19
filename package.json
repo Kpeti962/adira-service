@@ -13,6 +13,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "tailwind-hamburgers": "^1.3.5"
+    "flowbite": "^2.4.1",
+    "tailwind-hamburgers": "^1.3.5",
+    "tw-elements": "^2.0.0"
   }
 }
