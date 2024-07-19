@@ -3,7 +3,9 @@ module.exports = {
   darkMode: 'class',
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {keyframes: {
+    extend: {
+    
+      keyframes: {
       rotate: {
         '0%': { transform: 'perspective(1000px) rotateY(0deg)'},
         '100%': { transform: 'perspective(1000px) rotateY(360deg)'}
