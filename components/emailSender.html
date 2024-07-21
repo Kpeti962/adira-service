@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+
+    <title>Írj nekünk</title>
+  </head>
+  <body class="body bg-primary box-border w-full md:overflow-auto">
+    <header>
+      <div
+        class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
+      ></div>
+      <nav class="flex h-24 items-center z-100 bg-white text-primary">
+        <div class="w-2/4 m-auto">
+          <a href="../index.html">
+            <img src="../assets/logo.png" alt="" class="min-w-52 h-16" />
+          </a>
+        </div>
+        <div class="z-100 bg-none w-full">
+          <ul class="justify-evenly hidden md:flex w-full">
+            <a href="./components/machines.html">
+              <div
+                class="z-20 group relative p-3 text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <a href="../components/machines.html">
+                  <span>Gépek</span>
+                </a>
+                <div
+                  class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
+                >
+                  <div class="py-1">
+                    <a
+                      href="./individualMachines/adira-pa.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Hidraulikus élhajlító – Adira PA</a
+                    >
+                    <a
+                      href="./individualMachines/adira-pf.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Hybrid élhajlító – Adira PF</a
+                    >
+                    <a
+                      href="./individualMachines/adira-gv.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Tábla lemezolló – Adira GV</a
+                    >
+                    <a
+                      href="./individualMachines/blueBender.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >BlueBender</a
+                    >
+                    <a
+                      href="./individualMachines/tandem.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Tandem</a
+                    >
+                    <a
+                      href="./individualMachines/automation.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Automatizálás</a
+                    >
+                    <a
+                      href="./individualMachines/heavy-duty.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Heavy Duty</a
+                    >
+                    <a
+                      href="./individualMachines/manual-laser.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Kézi lézerhegesztőgépek</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="z-20 group relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <a href="../components/parts.html">
+                <span>Alkatrészek</span>
+              </a>
+              <div
+                class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
+              >
+                <div class="py-1">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                    >Lézervágó alkatrészek</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                    >Élhajlító szerszámok</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Szerviz</span>
+            </div>
+            <div
+              class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Kapcsolat</span>
+            </div>
+            <div
+              class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <a href="./components/emailSender.html">
+                <span>Írj nekünk</span>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="flex flex-col md:hidden">
+          <div class="flex flex-col justify-center">
+            <div class="relative py-3 sm:max-w-xl mx-auto">
+              <nav x-data="{ open: false }">
+                <button
+                  id="menuButton"
+                  class="tham w-14 h-14 relative focus:outline-none bg-teal-600 rounded"
+                  @click="open = !open"
+                >
+                  <div
+                    class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'rotate-45': open,' -translate-y-1.5': !open }"
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-5 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'opacity-0': open } "
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
+                    ></span>
+                  </div>
+                </button>
+              </nav>
+            </div>
+          </div>
+          <div
+            class="thamnav z-20 hidden flex-col bg-secondary shadow-2xl w-80 h-96 text-center fixed left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2"
+          >
+            <ul class="flex flex-col h-full justify-evenly md:flex-row">
+              <a href="./components/machines.html">
+                <div
+                  class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+                >
+                  <a href="../components/machines.html">
+                    <span>Gépek</span>
+                  </a>
+                </div>
+              </a>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <a href="../components/parts.html">
+                  <span>Alkatrészek</span>
+                </a>
+              </div>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Szerviz</span>
+              </div>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Kapcsolat</span>
+              </div>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <a href="./components/emailSender.html">
+                  <span>Írj nekünk</span>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="body-font relative bg-gray-900 text-gray-400">
+      <div class="container mx-auto px-5 py-24">
+        <div class="mb-12 flex w-full flex-col text-center">
+          <h1
+            class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl"
+          >
+            Contact Us
+          </h1>
+          <p class="mx-auto text-base leading-relaxed lg:w-2/3">
+            Feel free to reach out to us! Whether you have a question, feedback,
+            or a collaboration proposal, we'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="mx-auto md:w-2/3 lg:w-1/2">
+          <div class="-m-2 md:flex flex-wrap">
+            <!-- form -->
+            <div class="md:w-1/2 pt-8">
+              <div class="relative">
+                <select
+                  id="options"
+                  name="options"
+                  class="peer form-group w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                >
+                  <option value="" disabled selected class="text-gray-100">
+                    Milyen géppel kapcsolatban írsz?
+                  </option>
+                  <option value="option1" class="text-gray-100">Opció 1</option>
+                  <option value="option2" class="text-gray-100">Opció 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="md:w-1/2 pt-8">
+              <div class="relative">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="peer form-group w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                  placeholder="Name"
+                />
+                <label
+                  for="name"
+                  class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                  >Name</label
+                >
+              </div>
+            </div>
+            <div class="md:w-1/2 pt-8">
+              <div class="relative">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="peer form-group w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                  placeholder="Email"
+                />
+                <label
+                  for="email"
+                  class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                  >Email</label
+                >
+              </div>
+            </div>
+            <div class="mt-4 w-full pt-8">
+              <div class="relative">
+                <textarea
+                  id="message"
+                  name="message"
+                  class="peer form-group h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                  placeholder="Message"
+                ></textarea>
+                <label
+                  for="message"
+                  class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                  >Message</label
+                >
+              </div>
+            </div>
+            <div class="w-full pt-8">
+              <button
+                type="submit"
+                onclick="sendMail()"
+                class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+              >
+                Button
+              </button>
+            </div>
+
+            <!-- footer -->
+            <div
+              class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center"
+            >
+              <a class="text-indigo-400">example@email.com</a>
+              <p class="my-5 leading-normal">
+                49 Smith St. <br />Saint Cloud, MN 56301
+              </p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      x="2"
+                      y="2"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                    ></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+    <script src="../scripts/main.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('GEE2KebGzoAF9pDIG');
+      })();
+    </script>
+    <script src="../scripts/emailScript.js"></script>
+  </body>
+</html>
