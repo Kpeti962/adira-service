@@ -1,104 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/output.css" rel="stylesheet" />
     <title>Gépek</title>
-</head>
-<body class="body bg-primary box-border w-full md:overflow-auto">
-    <div
-    class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
-  ></div>
-  <nav class="flex h-24 items-center z-100 bg-white text-primary">
-    <div class="w-2/4 m-auto">
-      <img src="./assets/logo.png" alt="" class="min-w-52 h-16" />
-    </div>
-    <div class="z-100 bg-none w-full">
-      <ul class="justify-evenly hidden md:flex w-full">
-        <a href="./components/machines.html">
+  </head>
+  <body class="body bg-primary box-border w-full md:overflow-auto">
+    <header>
+      <div
+        class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
+      ></div>
+      <nav class="flex h-24 items-center z-100 bg-white text-primary">
+        <div class="w-2/4 m-auto">
+          <a href="../index.html">
+            <img src="../assets/logo.png" alt="" class="min-w-52 h-16" />
+          </a>
+        </div>
+        <div class="z-100 bg-none w-full">
+          <ul class="justify-evenly hidden md:flex w-full">
+            <a href="./components/machines.html">
+              <div
+                class="z-20 group relative p-3 text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <a href="../components/machines.html">
+                  <span>Gépek</span>
+                </a>
+                <div
+                  class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
+                >
+                  <div class="py-1">
+                    <a
+                      href="./individualMachines/adira-pa.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Hidraulikus élhajlító – Adira PA</a
+                    >
+                    <a
+                      href="./individualMachines/adira-pf.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Hybrid élhajlító – Adira PF</a
+                    >
+                    <a
+                      href="./individualMachines/adira-gv.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Tábla lemezolló – Adira GV</a
+                    >
+                    <a
+                      href="./individualMachines/blueBender.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >BlueBender</a
+                    >
+                    <a
+                      href="./individualMachines/tandem.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Tandem</a
+                    >
+                    <a
+                      href="./individualMachines/automation.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Automatizálás</a
+                    >
+                    <a
+                      href="./individualMachines/heavy-duty.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Heavy Duty</a
+                    >
+                    <a
+                      href="./individualMachines/manual-laser.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Kézi lézerhegesztőgépek</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="z-20 group relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <a href="../components/parts.html">
+                <span>Alkatrészek</span>
+              </a>
+              <div
+                class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
+              >
+                <div class="py-1">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                    >Lézervágó alkatrészek</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                    >Élhajlító szerszámok</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Szerviz</span>
+            </div>
+            <div
+              class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Kapcsolat</span>
+            </div>
+          </ul>
+        </div>
+        <div class="flex flex-col md:hidden">
+          <div class="flex flex-col justify-center">
+            <div class="relative py-3 sm:max-w-xl mx-auto">
+              <nav x-data="{ open: false }">
+                <button
+                  id="menuButton"
+                  class="tham w-14 h-14 relative focus:outline-none bg-teal-600 rounded"
+                  @click="open = !open"
+                >
+                  <div
+                    class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'rotate-45': open,' -translate-y-1.5': !open }"
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-5 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'opacity-0': open } "
+                    ></span>
+                    <span
+                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
+                      :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
+                    ></span>
+                  </div>
+                </button>
+              </nav>
+            </div>
+          </div>
           <div
-            class="relative p-3 text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            class="thamnav z-20 hidden flex-col bg-secondary shadow-2xl w-80 h-96 text-center fixed left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2"
           >
-            <span>Gépek</span>
+            <ul class="flex flex-col h-full justify-evenly md:flex-row">
+              <a href="./components/machines.html">
+                <div
+                  class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+                >
+                  <a href="../components/machines.html">
+                    <span>Gépek</span>
+                  </a>
+                </div>
+              </a>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <a href="../components/parts.html">
+                  <span>Alkatrészek</span>
+                </a>
+              </div>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Szerviz</span>
+              </div>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Kapcsolat</span>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Service Block 1 -->
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Hidraulikus élhajlító
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+            Adira PA
+            </p>
           </div>
         </a>
-        <div
-          class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+        <!-- Service Block 2 -->
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
         >
-          <span>Alkatrészek</span>
-        </div>
-        <div
-          class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-        >
-          <span>Szerviz</span>
-        </div>
-        <div
-          class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-        >
-          <span>Kapcsolat</span>
-        </div>
-      </ul>
-    </div>
-    <div class="flex flex-col md:hidden">
-      <div class="flex flex-col justify-center">
-        <div class="relative py-3 sm:max-w-xl mx-auto">
-          <nav x-data="{ open: false }">
-            <button
-              id="menuButton"
-              class="tham w-14 h-14 relative focus:outline-none bg-teal-600 rounded"
-              @click="open = !open"
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
             >
-              <div
-                class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              >
-                <span
-                  class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
-                  :class="{'rotate-45': open,' -translate-y-1.5': !open }"
-                ></span>
-                <span
-                  class="block absolute h-0.5 w-5 text-white bg-current transform transition duration-500 ease-in-out"
-                  :class="{'opacity-0': open } "
-                ></span>
-                <span
-                  class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
-                  :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
-                ></span>
-              </div>
-            </button>
-          </nav>
-        </div>
-      </div>
-      <div
-        class="thamnav z-20 hidden flex-col bg-secondary shadow-2xl w-80 h-96 text-center fixed left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2"
-      >
-        <ul class="flex flex-col h-full justify-evenly md:flex-row">
-          <div
-            class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-          >
-            <span>Gépek</span>
+              Hybrid élhajlító
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              Adira PF
+            </p>
           </div>
+        </a>
+        <!-- Service Block 3 -->
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
+        >
           <div
-            class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-          >
-            <span>Alkatrészek</span>
-          </div>
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
           <div
-            class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
           >
-            <span>Szerviz</span>
+            <h3
+              class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Tábla lemezolló
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+            Adira GV
+            </p>
           </div>
+        </a>
+        <!-- Service Block 4 -->
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
+        >
           <div
-            class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
           >
-            <span>Kapcsolat</span>
+            <h3
+              class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Tandem
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              -
+            </p>
           </div>
-        </ul>
+        </a>
+        <!-- Service Block 5 -->
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              BlueBender
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              -
+            </p>
+          </div>
+        </a>
+        <!-- Service Block 6 -->
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Automatizálás
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              Adira Cell
+            </p>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              Adira ATC
+            </p>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Heavy Duty
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              Adira PH
+            </p>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              Adira GH
+            </p>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/empty-img.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Kézi lézerhegesztőgépek
+            </h3>
+            <p
+              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+            >
+              1 kW-3 kW
+            </p>
+          </div>
+        </a>
       </div>
     </div>
-  </nav>
 
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script src="../scripts/main.js"></script>
+  </body>
 </html>
