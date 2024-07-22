@@ -6,12 +6,15 @@
     <link href="/src/output.css" rel="stylesheet" />
     <title>Gránit-Mill Szerviz</title>
   </head>
-  <body class="body bg-primary box-border w-full md:overflow-auto">
+  <body class="bg-primary box-border w-full md:overflow-auto">
+ 
+
+   
     <header>
       <div
         class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
       ></div>
-      <nav class="flex h-24 items-center z-100 bg-white text-primary">
+      <nav class="flex h-24 items-center z-20 bg-white text-primary">
         <div class="w-2/4 m-auto">
           <a href="./index.html">
             <img
@@ -21,11 +24,11 @@
             />
           </a>
         </div>
-        <div class="z-100 bg-none w-full">
+        <div class="z-20 bg-none w-full">
           <ul class="justify-evenly hidden md:flex w-full">
             <a href="./components/machines.html">
               <div
-                class="z-20 group relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+                class="group relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
                 <span>Gépek</span>
                 <div
@@ -33,29 +36,19 @@
                 >
                   <div class="py-1">
                     <a
-                      href="././components/individualMachines/adira-pa.html"
+                      href="././components/individualMachines/hydraulicBender.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Hidraulikus élhajlító – Adira PA</a
+                      >Hidraulikus élhajlító</a
                     >
                     <a
-                      href="././components/individualMachines/adira-pf.html"
+                      href="././components/individualMachines/hybridBender.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Hybrid élhajlító – Adira PF</a
+                      >Hybrid élhajlító</a
                     >
                     <a
-                      href="././components/individualMachines/adira-gv.html"
+                      href="././components/individualMachines/electricBender.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Tábla lemezolló – Adira GV</a
-                    >
-                    <a
-                      href="././components/individualMachines/blueBender.html"
-                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >BlueBender</a
-                    >
-                    <a
-                      href="././components/individualMachines/tandem.html"
-                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Tandem</a
+                      >Elektromos élhajlító</a
                     >
                     <a
                       href="././components/individualMachines/automation.html"
@@ -68,9 +61,44 @@
                       >Heavy Duty</a
                     >
                     <a
-                      href="././components/individualMachines/manual-laser.html"
+                      href="././components/individualMachines/tandem.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Kézi lézerhegesztőgépek</a
+                      >Tandem</a
+                    >
+                    <a
+                      href="././components/individualMachines/hydraulicPlateCutter.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Hidraulikus lemezvágó</a
+                    >
+                    <a
+                      href="././components/individualMachines/boltSeries.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >BOLT Series 10-60 kW</a
+                    >
+                    <a
+                      href="././components/individualMachines/swingSeries.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >SWING Series 1-12 kW</a
+                    >
+                    <a
+                      href="././components/individualMachines/awingSeries.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >AWING Series 1-20 kW</a
+                    >
+                    <a
+                      href="././components/individualMachines/bullSeries.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >BULL Series 2-60 kW</a
+                    >
+                    <a
+                      href="././components/individualMachines/ganHSeries.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >GAN-H Series 1-4 kW</a
+                    >
+                    <a
+                      href="././components/individualMachines/swanHWSeries.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >SWAN HW Series 1-2 kW</a
                     >
                   </div>
                 </div>
@@ -178,9 +206,9 @@
               <div
                 class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-              <a href="./components/emailSender.html">
-                <span>Ajánlatkérés</span>
-              </a>
+                <a href="./components/emailSender.html">
+                  <span>Ajánlatkérés</span>
+                </a>
               </div>
             </ul>
           </div>
@@ -407,6 +435,7 @@
         </div>
       </section>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="./scripts/main.js"></script>
