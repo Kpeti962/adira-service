@@ -1315,14 +1315,9 @@ input:checked + .toggle-bg {
   margin-bottom: 1.5rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .mb-0 {
@@ -1351,6 +1346,10 @@ input:checked + .toggle-bg {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mr-3 {
@@ -1387,10 +1386,6 @@ input:checked + .toggle-bg {
 
 .mt-\[50px\] {
   margin-top: 50px;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .box-border {
@@ -1498,11 +1493,6 @@ input:checked + .toggle-bg {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .h-0 {
@@ -1629,6 +1619,10 @@ input:checked + .toggle-bg {
   width: 1.25rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-64 {
   width: 16rem;
 }
@@ -1667,10 +1661,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .min-w-44 {
@@ -3260,11 +3250,6 @@ input:checked + .toggle-bg {
 .py-\[0\.4rem\] {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-2\.5 {
@@ -4877,8 +4862,14 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 768px) {
-  .md\:m-auto {
-    margin: auto;
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:mx-52 {
+    margin-left: 13rem;
+    margin-right: 13rem;
   }
 
   .md\:my-0 {
@@ -4886,9 +4877,18 @@ input:checked + .toggle-bg {
     margin-bottom: 0px;
   }
 
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .md\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:mt-16 {
@@ -4897,10 +4897,6 @@ input:checked + .toggle-bg {
 
   .md\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:flex {
@@ -4984,6 +4980,11 @@ input:checked + .toggle-bg {
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
   .lg\:mt-0 {
