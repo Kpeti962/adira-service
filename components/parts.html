@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alkatrészek</title>
     <link href="/src/output.css" rel="stylesheet" />
+    <style>
+      .striped-background {
+        background-image: url('../../assets/bg.png');
+      }
+    </style>
   </head>
-  <body class="body bg-primary box-border w-full md:overflow-auto">
+  <body class="body striped-background box-border w-full md:overflow-auto">
     <header>
       <div
         class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
@@ -29,46 +34,36 @@
                 <div
                   class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
                 >
-                <div class="py-1">
+                  <div class="py-1">
                     <a
-                      href="./individualMachines/adira-pa.html"
+                      href="./machineGroups/bendingMachines.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Hidraulikus élhajlító – Adira PA</a
+                      >Élhajlító gépek</a
                     >
                     <a
-                      href="./individualMachines/adira-pf.html"
+                      href="./machineGroups/plateCutters.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Hybrid élhajlító – Adira PF</a
+                      >Lemezvágó ollók</a
                     >
                     <a
-                      href="./individualMachines/adira-gv.html"
+                      href="./machineGroups/2DlaserCutters.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Tábla lemezolló – Adira GV</a
+                      >2D-Lézervágógépek</a
                     >
                     <a
-                      href="./individualMachines/blueBender.html"
+                      href="./machineGroups/3DlaserCutters.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >BlueBender</a
+                      >3D-Lézervágógépek</a
                     >
                     <a
-                      href="./individualMachines/tandem.html"
+                      href="./machineGroups/laserBeams.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Tandem</a
+                      >Lézersugaras csövágó gépek</a
                     >
                     <a
-                      href="./individualMachines/automation.html"
+                      href="./machineGroups/laserWelders.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Automatizálás</a
-                    >
-                    <a
-                      href="./individualMachines/heavy-duty.html"
-                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Heavy Duty</a
-                    >
-                    <a
-                      href="./individualMachines/manual-laser.html"
-                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                      >Kézi lézerhegesztőgépek</a
+                      >Lézerhegesztő gépek</a
                     >
                   </div>
                 </div>
@@ -108,12 +103,12 @@
               <span>Kapcsolat</span>
             </div>
             <div
-            class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-          >
-          <a href="./emailSender.html">
-            <span>Ajánlatkérés</span>
-          </a>
-          </div>
+              class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <a href="./emailSender.html">
+                <span>Ajánlatkérés</span>
+              </a>
+            </div>
           </ul>
         </div>
         <div class="flex flex-col md:hidden">
@@ -176,36 +171,244 @@
                 <span>Kapcsolat</span>
               </div>
               <div
-              class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-            >
-            <a href="./components/emailSender.html">
-              <span>Ajánlatkérés</span>
-            </a>
-            </div>
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <a href="./components/emailSender.html">
+                  <span>Ajánlatkérés</span>
+                </a>
+              </div>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
+    <section>
+      <div>
+        <div class="py-8 flex justify-evenly">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row -mx-4">
+              <div class="md:flex-1 px-4">
+                <div class="h-[460px] rounded-lg mb-4">
+                  <img
+                    class="w-full h-full object-contain"
+                    src="../assets/parts/lasercutter.png"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="flex -mx-2 mb-4">
+                  <div class="w-1/2 px-2">
+                    <button
+                      class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
+                    >
+                      Vissza a főoldalra
+                    </button>
+                  </div>
+                  <div class="w-1/2 px-2">
+                    <button
+                      class="w-full bg-primary dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700"
+                    >
+                      Ajánlatot kérek
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="md:flex-1 px-4 flex flex-col justify-evenly mb-12 md:mb-0"
+              >
+                <h2
+                  class="text-3xl font-bold text-center text-primary dark:text-white mb-2"
+                >
+                  Lézervágó alkatrész 1
+                </h2>
+                <div>
+                  <span
+                    class="text-2xl font-bold text-primary dark:text-gray-300"
+                    >Leírás:</span
+                  >
+                  <p class="text-primary mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sed ante justo. Integer euismod libero id mauris malesuada
+                    tincidunt. Vivamus commodo nulla ut lorem rhoncus aliquet.
+                    Duis dapibus augue vel ipsum pretium, et venenatis sem
+                    blandit. Quisque ut erat vitae nisi ultrices placerat non
+                    eget velit. Integer ornare mi sed ipsum lacinia, non
+                    sagittis mauris blandit. Morbi fermentum libero vel nisl
+                    suscipit, nec tincidunt mi consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-8 flex justify-evenly">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col-reverse md:flex-row -mx-4">
+              <div class="md:flex-1 px-4 flex flex-col justify-evenly mb-12">
+                <h2
+                  class="text-3xl font-bold text-center text-primary dark:text-white mb-2"
+                >
+                  Lézervágó alkatrész 2
+                </h2>
+                <div>
+                  <span
+                    class="text-2xl font-bold text-primary dark:text-gray-300"
+                    >Leírás:</span
+                  >
+                  <p class="text-primary mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sed ante justo. Integer euismod libero id mauris malesuada
+                    tincidunt. Vivamus commodo nulla ut lorem rhoncus aliquet.
+                    Duis dapibus augue vel ipsum pretium, et venenatis sem
+                    blandit. Quisque ut erat vitae nisi ultrices placerat non
+                    eget velit. Integer ornare mi sed ipsum lacinia, non
+                    sagittis mauris blandit. Morbi fermentum libero vel nisl
+                    suscipit, nec tincidunt mi consectetur.
+                  </p>
+                </div>
+              </div>
+              <div class="md:flex-1 px-4">
+                <div class="h-[460px] rounded-lg mb-4">
+                  <img
+                    class="w-full h-full object-contain"
+                    src="../assets/parts/lasercutter.png"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="flex -mx-2 mb-4">
+                  <div class="w-1/2 px-2">
+                    <button
+                      class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
+                    >
+                      Vissza a főoldalra
+                    </button>
+                  </div>
+                  <div class="w-1/2 px-2">
+                    <button
+                      class="w-full bg-primary dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700"
+                    >
+                      Ajánlatot kérek
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
 
-
-
+   
+        <div class=" py-8 flex justify-evenly">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row -mx-4">
+              <div class="md:flex-1 px-4">
+                <div
+                  class="h-[460px] rounded-lg  mb-4"
+                >
+                  <img
+                    class="w-full h-full object-contain"
+                    src="../assets/parts/lasercutter.png"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="flex -mx-2 mb-4">
+                  <div class="w-1/2 px-2">
+                    <button
+                      class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
+                    >
+                      Vissza a főoldalra
+                    </button>
+                  </div>
+                  <div class="w-1/2 px-2">
+                    <button
+                      class="w-full bg-primary dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700"
+                    >
+                      Ajánlatot kérek
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="md:flex-1 px-4 flex flex-col justify-evenly mb-12 md:mb-0">
+                <h2 class="text-3xl font-bold text-center text-primary dark:text-white mb-2">
+                  Élhajlító szerszám 1
+                </h2>
+                <div>
+                  <span class="text-2xl font-bold text-primary dark:text-gray-300"
+                    >Leírás:</span
+                  >
+                  <p class="text-primary  mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sed ante justo. Integer euismod libero id mauris malesuada
+                    tincidunt. Vivamus commodo nulla ut lorem rhoncus aliquet.
+                    Duis dapibus augue vel ipsum pretium, et venenatis sem
+                    blandit. Quisque ut erat vitae nisi ultrices placerat non eget
+                    velit. Integer ornare mi sed ipsum lacinia, non sagittis
+                    mauris blandit. Morbi fermentum libero vel nisl suscipit, nec
+                    tincidunt mi consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" py-8 flex justify-evenly ">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col-reverse md:flex-row -mx-4">
+              <div class="md:flex-1 px-4 flex flex-col justify-evenly mb-12">
+                <h2 class="text-3xl font-bold text-center text-primary dark:text-white mb-2">
+                  Élhajlító szerszám 2
+                </h2>
+                <div>
+                  <span class="text-2xl font-bold text-primary dark:text-gray-300"
+                    >Leírás:</span
+                  >
+                  <p class="text-primary  mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sed ante justo. Integer euismod libero id mauris malesuada
+                    tincidunt. Vivamus commodo nulla ut lorem rhoncus aliquet.
+                    Duis dapibus augue vel ipsum pretium, et venenatis sem
+                    blandit. Quisque ut erat vitae nisi ultrices placerat non eget
+                    velit. Integer ornare mi sed ipsum lacinia, non sagittis
+                    mauris blandit. Morbi fermentum libero vel nisl suscipit, nec
+                    tincidunt mi consectetur.
+                  </p>
+                </div>
+              </div>
+              <div class="md:flex-1 px-4">
+                <div
+                  class="h-[460px] rounded-lg  mb-4"
+                >
+                  <img
+                    class="w-full h-full object-contain"
+                    src="../assets/parts/lasercutter.png"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="flex -mx-2 mb-4">
+                  <div class="w-1/2 px-2">
+                    <button
+                    class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
+                    >
+                    Vissza a főoldalra
+                  </button>
+                  </div>
+                  <div class="w-1/2 px-2">
+                    <button
+                      class="w-full bg-primary dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700"
+                    >
+                      Ajánlatot kérek
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="../scripts/main.js"></script>
   </body>
 </html>
-
-
-<h1>Adira PA</h1>
-    <div>
-      <img src="../../assets/Adira/adira-PA-front.png" alt="" />
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia
-        exercitationem rerum sapiente, dolor commodi modi fuga velit
-        repellendus, quod fugit, dicta eos sint iusto voluptatum et excepturi
-        illo nam.
-      </h2>
-    </div>
-  </body>

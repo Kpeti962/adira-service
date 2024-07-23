@@ -8,6 +8,26 @@
     <title>Ajánlatkérés</title>
   </head>
   <body class="body bg-primary box-border w-full md:overflow-auto">
+   <div class="wrongAlert hidden">
+     <div class="fixed top-0 left-1/2 transform -translate-x-1/2 z-40 flex bg-red-200 px-6 py-4 mx-2 my-4 rounded-md text-lg  items-center max-w-lg">
+       <svg viewBox="0 0 24 24" class=" text-red-600 w-5 h-5 sm:w-5 sm:h-5 mr-3">
+         <path fill="currentColor"
+         d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z">
+        </path>
+      </svg>
+      <span class="text-red-800">Tölts ki és pipálj ki minden mezőt</span>
+    </div>
+  </div>
+   <div class="successAlert hidden">
+     <div class="fixed top-0 left-1/2 transform -translate-x-1/2 z-40 flex bg-green-200 px-6 py-4 mx-2 my-4 rounded-md text-lg  items-center max-w-lg">
+       <svg viewBox="0 0 24 24" class=" text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3">
+         <path fill="currentColor"
+         d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z">
+        </path>
+      </svg>
+      <span class="text-green-800">E-mail sikeresen elküldve</span>
+    </div>
+  </div>
     <header>
       <div
         class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
@@ -30,38 +50,38 @@
                 <div
                   class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
                 >
-                <div class="py-1">
-                  <a
-                    href="./machineGroups/bendingMachines.html"
-                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                    >Élhajlító gépek</a
-                  >
-                  <a
-                    href="./machineGroups/plateCutters.html"
-                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                    >Lemezvágó ollók</a
-                  >
-                  <a
-                    href="./machineGroups/2DlaserCutters.html"
-                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                    >2D-Lézervágógépek</a
-                  >
-                  <a
-                    href="./machineGroups/3DlaserCutters.html"
-                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                    >3D-Lézervágógépek</a
-                  >
-                  <a
-                    href="./machineGroups/laserBeams.html"
-                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                    >Lézersugaras csövágó gépek</a
-                  >
-                  <a
-                    href="./machineGroups/laserWelders.html"
-                    class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
-                    >Lézerhegesztő gépek</a
-                  >
-                </div>
+                  <div class="py-1">
+                    <a
+                      href="./machineGroups/bendingMachines.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Élhajlító gépek</a
+                    >
+                    <a
+                      href="./machineGroups/plateCutters.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Lemezvágó ollók</a
+                    >
+                    <a
+                      href="./machineGroups/2DlaserCutters.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >2D-Lézervágógépek</a
+                    >
+                    <a
+                      href="./machineGroups/3DlaserCutters.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >3D-Lézervágógépek</a
+                    >
+                    <a
+                      href="./machineGroups/laserBeams.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Lézersugaras csövágó gépek</a
+                    >
+                    <a
+                      href="./machineGroups/laserWelders.html"
+                      class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
+                      >Lézerhegesztő gépek</a
+                    >
+                  </div>
                 </div>
               </div>
             </a>
@@ -232,6 +252,7 @@
             <div class="md:w-1/2 pt-8">
               <div class="relative">
                 <input
+                required
                   type="text"
                   id="name"
                   name="name"
@@ -273,6 +294,26 @@
                   for="message"
                   class="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
                   >Message</label
+                >
+              </div>
+            </div>
+            <div class="w-full pt-8">
+              <div class="relative flex">
+                <div class="flex flex-col justify-center mr-3">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="dataSheet"
+                    placeholder="Email"
+                    class="flex items-center"
+                  />
+                </div>
+                <label for="email" class="bg-transparent text-indigo-500"
+                  >Elolvastam és elfogadom az 
+                  <a href="./dataSheet.html" class="text-indigo-300">
+                    Adatkezelési tájékoztatóban
+                  </a>
+                  foglaltakat</label
                 >
               </div>
             </div>
