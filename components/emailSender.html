@@ -8,26 +8,38 @@
     <title>Ajánlatkérés</title>
   </head>
   <body class="body bg-primary box-border w-full md:overflow-auto">
-   <div class="wrongAlert hidden">
-     <div class="fixed top-0 left-1/2 transform -translate-x-1/2 z-40 flex bg-red-200 px-6 py-4 mx-2 my-4 rounded-md text-lg  items-center max-w-lg">
-       <svg viewBox="0 0 24 24" class=" text-red-600 w-5 h-5 sm:w-5 sm:h-5 mr-3">
-         <path fill="currentColor"
-         d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z">
-        </path>
-      </svg>
-      <span class="text-red-800">Tölts ki és pipálj ki minden mezőt</span>
+    <div class="wrongAlert hidden">
+      <div
+        class="fixed top-0 left-1/2 transform -translate-x-1/2 z-40 flex bg-red-200 px-6 py-4 mx-2 my-4 rounded-md text-lg items-center max-w-lg"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          class="text-red-600 w-5 h-5 sm:w-5 sm:h-5 mr-3"
+        >
+          <path
+            fill="currentColor"
+            d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+          ></path>
+        </svg>
+        <span class="text-red-800">Tölts ki és pipálj ki minden mezőt</span>
+      </div>
     </div>
-  </div>
-   <div class="successAlert hidden">
-     <div class="fixed top-0 left-1/2 transform -translate-x-1/2 z-40 flex bg-green-200 px-6 py-4 mx-2 my-4 rounded-md text-lg  items-center max-w-lg">
-       <svg viewBox="0 0 24 24" class=" text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3">
-         <path fill="currentColor"
-         d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z">
-        </path>
-      </svg>
-      <span class="text-green-800">E-mail sikeresen elküldve</span>
+    <div class="successAlert hidden">
+      <div
+        class="fixed top-0 left-1/2 transform -translate-x-1/2 z-40 flex bg-green-200 px-6 py-4 mx-2 my-4 rounded-md text-lg items-center max-w-lg"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          class="text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3"
+        >
+          <path
+            fill="currentColor"
+            d="M11.983,0a12.206,12.206,0,0,0-8.51,3.653A11.8,11.8,0,0,0,0,12.207,11.779,11.779,0,0,0,11.8,24h.214A12.111,12.111,0,0,0,24,11.791h0A11.766,11.766,0,0,0,11.983,0ZM10.5,16.542a1.476,1.476,0,0,1,1.449-1.53h.027a1.527,1.527,0,0,1,1.523,1.47,1.475,1.475,0,0,1-1.449,1.53h-.027A1.529,1.529,0,0,1,10.5,16.542ZM11,12.5v-6a1,1,0,0,1,2,0v6a1,1,0,1,1-2,0Z"
+          ></path>
+        </svg>
+        <span class="text-green-800">E-mail sikeresen elküldve</span>
+      </div>
     </div>
-  </div>
     <header>
       <div
         class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
@@ -111,7 +123,9 @@
             <div
               class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
             >
-              <span>Szerviz</span>
+              <a href="./service.html">
+                <span>Szerviz</span>
+              </a>
             </div>
             <div
               class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
@@ -179,7 +193,9 @@
               <div
                 class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-                <span>Szerviz</span>
+                <a href="./service.html">
+                  <span>Szerviz</span>
+                </a>
               </div>
               <div
                 class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
@@ -252,7 +268,7 @@
             <div class="md:w-1/2 pt-8">
               <div class="relative">
                 <input
-                required
+                  required
                   type="text"
                   id="name"
                   name="name"
@@ -309,7 +325,7 @@
                   />
                 </div>
                 <label for="email" class="bg-transparent text-indigo-500"
-                  >Elolvastam és elfogadom az 
+                  >Elolvastam és elfogadom az
                   <a href="./dataSheet.html" class="text-indigo-300">
                     Adatkezelési tájékoztatóban
                   </a>
