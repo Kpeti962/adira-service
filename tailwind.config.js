@@ -22,6 +22,10 @@ module.exports = {
         'primary': '#0d2542',
         'secondary': '#d98723',
       },
+      borderColor: {
+        'primary': '#0d2542',
+        'secondary': '#d98723',
+      },
 
     },
   },
