@@ -1694,6 +1694,10 @@ input:checked + .toggle-bg {
   width: 15px;
 }
 
+.w-\[170px\] {
+  width: 170px;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1716,10 +1720,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[170px\] {
-  width: 170px;
 }
 
 .min-w-52 {
@@ -3001,6 +3001,11 @@ input:checked + .toggle-bg {
   border-color: rgb(13 37 66 / var(--tw-border-opacity));
 }
 
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 82 82 / var(--tw-border-opacity));
+}
+
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(217 135 35 / var(--tw-border-opacity));
@@ -3013,11 +3018,6 @@ input:checked + .toggle-bg {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(240 82 82 / var(--tw-border-opacity));
 }
 
 .border-t-transparent {
@@ -3326,12 +3326,12 @@ input:checked + .toggle-bg {
   padding: 1rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-1 {
@@ -3783,6 +3783,11 @@ input:checked + .toggle-bg {
   color: rgb(13 37 66 / var(--tw-text-opacity));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(240 82 82 / var(--tw-text-opacity));
+}
+
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(224 36 36 / var(--tw-text-opacity));
@@ -3801,11 +3806,6 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(240 82 82 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -4223,6 +4223,10 @@ input:checked + .toggle-bg {
   transition-duration: 150ms;
 }
 
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 .duration-150 {
   transition-duration: 150ms;
 }
@@ -4241,10 +4245,6 @@ input:checked + .toggle-bg {
 
 .duration-\[350ms\] {
   transition-duration: 350ms;
-}
-
-.duration-100 {
-  transition-duration: 100ms;
 }
 
 .ease-\[cubic-bezier\(0\2c 0\2c 0\.15\2c 1\)\2c _cubic-bezier\(0\2c 0\2c 0\.15\2c 1\)\] {
@@ -4789,12 +4789,12 @@ input:checked + .toggle-bg {
   opacity: 0.6;
 }
 
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
-}
-
 .group:hover .group-hover\:opacity-0 {
   opacity: 0;
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 .group\/x:focus .group-focus\/x\:h-\[11px\] {
