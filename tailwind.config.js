@@ -4,7 +4,10 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
-
+      fontFamily: {
+        oswald: ["Oswald", "sans-serif"],
+        rowdies: ["Rowdies", "sans-serif"],
+      },
       keyframes: {
         rotate: {
           '0%': { transform: 'perspective(1000px) rotateY(0deg)' },

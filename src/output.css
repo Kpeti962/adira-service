@@ -3528,6 +3528,14 @@ input:checked + .toggle-bg {
   vertical-align: super;
 }
 
+.font-oswald {
+  font-family: Oswald, sans-serif;
+}
+
+.font-rowdies {
+  font-family: Rowdies, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
