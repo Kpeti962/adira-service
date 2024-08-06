@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        oswald: ["Oswald", "sans-serif"],
-        rowdies: ["Rowdies", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        
       },
       keyframes: {
         rotate: {
