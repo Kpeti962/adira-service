@@ -8,6 +8,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
         
       },
+    
       keyframes: {
         rotate: {
           '0%': { transform: 'perspective(1000px) rotateY(0deg)' },
@@ -32,5 +33,14 @@ module.exports = {
 
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.clip-custom': {
+          clipPath: 'polygon(0 0, 100% 5%, 100% 100%, 0 95%)',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 }

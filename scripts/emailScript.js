@@ -5,14 +5,16 @@ function sendMail() {
     const params = {
         subject: document.getElementById("options").value,
         name: document.getElementById("name").value,
+        tel: document.getElementById("tel").value,
         email: document.getElementById("email").value,
+        company: document.getElementById("company").value,
         message: document.getElementById("message").value
 
     };
 
     let datasheet = document.getElementById("checkbox").checked;
 
-    if (datasheet && params.subject !== "" && params.email !== "" && params.message !== "") {
+    if (datasheet && params.subject !== "" && params.tel !== "" && params.email !== "" &&  params.company !== "" && params.message !== "") {
         emailjs.send("service_vochazd", "template_q5cwc7b", params)
             .then(() => {
                 successAlert.classList.remove("hidden");
@@ -23,7 +25,9 @@ function sendMail() {
 
         document.getElementById("options").value = "";
         document.getElementById("name").value = "";
+        document.getElementById("tel").value = "";
         document.getElementById("email").value = "";
+        document.getElementById("company").value = "";
         document.getElementById("message").value = "";
         document.getElementById("checkbox").checked = false;
     } else if (!datasheet) {
