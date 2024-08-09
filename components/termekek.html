@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/output.css" rel="stylesheet" />
+    <title>Gépek</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Lézerhegesztő gépek</title>
   </head>
   <body
-    class="body font-roboto bg-[url('../assets/bg-1.svg')] box-border w-full md:overflow-auto"
+    class="font-roboto body bg-[url('../assets/bg-1.svg')] box-border w-full md:overflow-auto"
   >
     <header>
       <div
@@ -21,50 +21,50 @@
       ></div>
       <nav class="flex h-24 items-center z-100 bg-white text-primary">
         <div class="w-2/4 m-auto">
-          <a href="../../index.html">
-            <img src="../../assets/logo.png" alt="" class="min-w-52 h-16" />
+          <a href="../index.html">
+            <img src="../assets/logo.png" alt="" class="min-w-52 h-16" />
           </a>
         </div>
         <div class="z-100 bg-none w-full">
           <ul class="text-xl justify-evenly hidden md:flex w-full">
-            <a href="./components/machines.html">
+            <a href="./components/termekek.html">
               <div
                 class="z-20 group relative p-3 text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-                <a href="../machines.html">
-                  <span>Gépek</span>
+                <a href="../components/termekek.html">
+                  <span>Termékek</span>
                 </a>
                 <div
                   class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
                 >
                   <div class="py-1">
                     <a
-                      href="../machineGroups/bendingMachines.html"
+                      href="./machineGroups/hajlitogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Élhajlító gépek</a
                     >
                     <a
-                      href="../machineGroups/plateCutters.html"
+                      href="./machineGroups/lemezvago-ollok.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lemezvágó ollók</a
                     >
                     <a
-                      href="../machineGroups/2DlaserCutters.html"
+                      href="./machineGroups/2D-lezervagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >2D-Lézervágógépek</a
                     >
                     <a
-                      href="../machineGroups/3DlaserCutters.html"
+                      href="./machineGroups/3D-lezervagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >3D-Lézervágógépek</a
                     >
                     <a
-                      href="../machineGroups/laserBeams.html"
+                      href="./machineGroups/lezersugaras-csovagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lézersugaras csövágó gépek</a
                     >
                     <a
-                      href="../machineGroups/laserWelders.html"
+                      href="./machineGroups/lezerhegeszto-gepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lézerhegesztő gépek</a
                     >
@@ -75,7 +75,7 @@
             <div
               class="z-20 group relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
             >
-              <a href="../parts.html">
+              <a href="../components/alkatreszek.html">
                 <span>Alkatrészek</span>
               </a>
               <div
@@ -90,25 +90,19 @@
                 </div>
               </div>
             </div>
+            
             <div
-              class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
             >
-              <a href="../service.html">
-                <span>Szerviz</span>
-              </a>
-            </div>
-            <div
-              class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-            >
-              <span>Kapcsolat</span>
-            </div>
-            <div
-              class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-            >
-              <a href="../emailSender.html">
-                <span>Ajánlatkérés</span>
-              </a>
-            </div>
+            <a href="./ajanlatkeres.html">
+              <span>Ajánlatkérés</span>
+            </a>
+          </div>
+          <div
+            class="relative p-3 text-black hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+          >
+            <span>Kapcsolat</span>
+          </div>
           </ul>
         </div>
         <div class="flex flex-col md:hidden">
@@ -144,91 +138,51 @@
             class="thamnav z-20 hidden flex-col bg-secondary shadow-2xl w-80 h-96 text-center fixed left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2"
           >
             <ul class="flex flex-col h-full justify-evenly md:flex-row">
-              <a href="./components/machines.html">
+              <a href="./components/termekek.html">
                 <div
                   class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
                 >
-                  <a href="../machines.html">
-                    <span>Gépek</span>
+                  <a href="../components/termekek.html">
+                    <span>Termékek</span>
                   </a>
                 </div>
               </a>
               <div
                 class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-                <a href="../parts.html">
+                <a href="../components/alkatreszek.html">
                   <span>Alkatrészek</span>
                 </a>
               </div>
+              
               <div
-                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-                <a href="../service.html">
-                  <span>Szerviz</span>
-                </a>
-              </div>
-              <div
-                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-              >
-                <span>Kapcsolat</span>
-              </div>
-              <div
-                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-              >
-                <a href="../emailSender.html">
-                  <span>Ajánlatkérés</span>
-                </a>
-              </div>
+              <a href="./components/ajanlatkeres.html">
+                <span>Ajánlatkérés</span>
+              </a>
+            </div>
+            <div
+              class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Kapcsolat</span>
+            </div>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <section>
-      <ul
-        class="ml-6 gap-4 items-center font-medium text-sm flex dark:text-white"
-      >
-        <li>
-          <a href="../machines.html" class="text-secondary"> Termékek </a>
-        </li>
 
-        <li
-          class="h-6 border-r border-gray-300 -skew-x-12 dark:border-gray-500"
-        ></li>
-
-        <li>
-          <a href="" class="text-orange-200"> Lézerhegesztő gépek </a>
-        </li>
-      </ul>
-    </section>
     <div class="container mx-auto px-4 pb-8">
-      <div class="flex justify-center">
-        <a href="../machines.html">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-8 text-white cursor-pointer hover:text-gray-200"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
-            />
-          </svg>
-        </a>
-      </div>
       <h1 class="text-white text-center font-bold text-2xl md:text-3xl my-6">
-        Lézerhegesztő gépek
+        Termékek
       </h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Service Block 1 -->
         <a
-          href="../individualMachines/swanHWSeries.html"
+          href="./machineGroups/hajlitogepek.html"
           class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
-          style="background-image: url('../../assets/Penta/swan-index.png')"
+          style="background-image: url('../assets/Adira/bending-index.png')"
         >
           <div
             class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
@@ -239,19 +193,108 @@
             <h3
               class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
             >
-              SWAN HW Series
+              Élhajlító gépek
             </h3>
-            <p
-              class="text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+          </div>
+        </a>
+        <a
+          href="./machineGroups/lemezvago-ollok.html"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/Adira/plateCutter-index.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
             >
-              1-2 kW
-            </p>
+              Lemezvágó ollók
+            </h3>
+          </div>
+        </a>
+        <a
+          href="./machineGroups/2D-lezervagogepek.html"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/Penta/penta-laser-index.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              2D-Lézervágógépek
+            </h3>
+          </div>
+        </a>
+        <a
+          href="./machineGroups/3D-lezervagogepek.html"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="
+            background-image: url('../assets/Penta/penta-laser3d-index.png');
+          "
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              3D-Lézervágógépek
+            </h3>
+          </div>
+        </a>
+        <a
+          href="./machineGroups/lezersugaras-csovagogepek.html"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="
+            background-image: url('../../assets/Penta/tubecutter-index.png');
+          "
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Lézersugaras csővágó gépek
+            </h3>
+          </div>
+        </a>
+        <a
+          href="./machineGroups/lezerhegeszto-gepek.html"
+          class="relative group block bg-cover bg-center aspect-square rounded-lg overflow-hidden shadow-lg"
+          style="background-image: url('../assets/Penta/swan-2.png')"
+        >
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-75 transition duration-300 ease-in-out"
+          ></div>
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center p-4"
+          >
+            <h3
+              class="text-white text-center text-2xl font-bold mb-2 transform group-hover:-translate-y-2 transition duration-300 ease-in-out"
+            >
+              Lézerhegesztő gépek
+            </h3>
           </div>
         </a>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-    <script src="../../scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
   </body>
 </html>

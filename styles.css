@@ -11,3 +11,9 @@
       @apply absolute top-0 left-0 w-full h-full rounded-sm  [transition:2s] sm:hover:-translate-y-[15px] hover:-translate-y-[15px] hover:scale-[1.13];
     }
   }
+
+  @layer utilities {
+    .custom-rounded {
+      border-radius: 0 60px;
+    }
+  }

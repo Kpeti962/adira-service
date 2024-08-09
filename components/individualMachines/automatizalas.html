@@ -4,27 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/output.css" rel="stylesheet" />
+    <title>Automatizálás</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Hidraulikus élhajlító</title>
     <style>
       .striped-background {
         background-image: url('../../assets/bg.svg');
         background-color: rgba(0, 0, 0, 0.1);
-        background-blend-mode: darken; 
+        background-blend-mode: darken;
       }
     </style>
   </head>
   <body
     class="font-roboto striped-background body box-border w-full md:overflow-auto"
   >
- 
-
-  
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -39,7 +36,7 @@
         d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
       />
     </svg>
-   
+
     <header>
       <div
         class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
@@ -56,42 +53,42 @@
         </div>
         <div class="z-20 bg-none w-full">
           <ul class="text-xl justify-evenly hidden md:flex w-full">
-            <a href="../machines.html">
+            <a href="../termekek.html">
               <div
                 class="group relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-                <span>Gépek</span>
+                <span>Termékek</span>
                 <div
                   class="absolute left-0 w-64 mt-3 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300"
                 >
                   <div class="py-1">
                     <a
-                      href="../machineGroups/bendingMachines.html"
+                      href="../machineGroups/hajlitogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Élhajlító gépek</a
                     >
                     <a
-                      href="../machineGroups/plateCutters.html"
+                      href="../machineGroups/lemezvago-ollok.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lemezvágó ollók</a
                     >
                     <a
-                      href="../machineGroups/2DlaserCutters.html"
+                      href="../machineGroups/2D-lezervagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >2D-Lézervágógépek</a
                     >
                     <a
-                      href="../machineGroups/3DlaserCutters.html"
+                      href="../machineGroups/3D-lezervagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >3D-Lézervágógépek</a
                     >
                     <a
-                      href="../machineGroups/laserBeams.html"
+                      href="../machineGroups/lezersugaras-csovagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lézersugaras csövágó gépek</a
                     >
                     <a
-                      href="../machineGroups/laserWelders.html"
+                      href="../machineGroups/lezerhegeszto-gepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lézerhegesztő gépek</a
                     >
@@ -102,7 +99,7 @@
             <div
               class="z-20 group relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
             >
-              <a href="../parts.html">
+              <a href="../alkatreszek.html">
                 <span>Alkatrészek</span>
               </a>
               <div
@@ -110,32 +107,26 @@
               >
                 <div class="py-1">
                   <a
-                    href="./parts.html"
+                    href="./alkatreszek.html"
                     class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                     >Lézer kopó alkatrészek</a
                   >
                 </div>
               </div>
             </div>
+           
             <div
-              class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
             >
-              <a href="../service.html">
-                <span>Szerviz</span>
-              </a>
-            </div>
-            <div
-              class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-            >
-              <span>Kapcsolat</span>
-            </div>
-            <div
-              class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-            >
-              <a href="../emailSender.html">
-                <span>Ajánlatkérés</span>
-              </a>
-            </div>
+            <a href="../ajanlatkeres.html">
+              <span>Ajánlatkérés</span>
+            </a>
+          </div>
+          <div
+            class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+          >
+            <span>Kapcsolat</span>
+          </div>
           </ul>
         </div>
         <div class="flex flex-col md:hidden">
@@ -171,25 +162,18 @@
             class="thamnav z-20 hidden flex-col bg-secondary shadow-2xl w-80 h-96 text-center fixed left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2"
           >
             <ul class="flex flex-col h-full justify-evenly md:flex-row">
-              <a href="../machines.html">
+              <a href="../termekek.html">
                 <div
                   class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
                 >
-                  <span>Gépek</span>
+                  <span>Termékek</span>
                 </div>
               </a>
               <div
                 class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-                <a href="../parts.html">
+                <a href="../alkatreszek.html">
                   <span>Alkatrészek</span>
-                </a>
-              </div>
-              <div
-                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-              >
-                <a href="../service.html">
-                  <span>Szerviz</span>
                 </a>
               </div>
               <div
@@ -200,7 +184,7 @@
               <div
                 class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-                <a href="../emailSender.html">
+                <a href="../ajanlatkeres.html">
                   <span>Ajánlatkérés</span>
                 </a>
               </div>
@@ -214,7 +198,7 @@
         class="ml-6 gap-4 items-center font-medium text-sm flex dark:text-white"
       >
         <li>
-          <a href="../machines.html" class="text-primary"> Termékek </a>
+          <a href="../termekek.html" class="text-primary"> Termékek </a>
         </li>
 
         <li
@@ -222,7 +206,7 @@
         ></li>
 
         <li>
-          <a href="../machineGroups/bendingMachines.html" class="text-primary">
+          <a href="../machineGroups/hajlitogepek.html" class="text-primary">
             Élhajlító gépek
           </a>
         </li>
@@ -233,7 +217,7 @@
 
         <li>
           <a href="" class="text-gray-500 dark:text-gray-400">
-            Hidraulikus élhajlító
+            Automatizálás
           </a>
         </li>
       </ul>
@@ -248,9 +232,9 @@
           <h1
             class="flex flex-col text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl"
           >
-            <span class="block xl:inline text-primary">Adira PA</span>
+            <span class="block xl:inline text-primary">Adira ATC</span>
             <span class="block text-secondary xl:inline"
-              >Hidraulikus élhajlító</span
+              >Automata szerszámcserélő</span
             >
           </h1>
           <p
@@ -264,7 +248,7 @@
               class="m-auto sm:w-2/4 rounded-md shadow text-gray-800 bg-indigo-100 hover:bg-indigo-200"
             >
               <a
-                href="../machineGroups/bendingMachines.html"
+                href="../machineGroups/hajlitogepek.html"
                 class="w-full flex flex-col items-center justify-center py-3 border border-transparent text-base font-medium rounded-md md:text-lg"
               >
                 Vissza a többi géphez
@@ -274,11 +258,11 @@
               <button
                 class="text-red px-8 h-full md:text-lg md:px-10 hover:before:bg-redborder-red-500 rounded-md relative w-full overflow-hidden border border-secondary bg-white text-secondary shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-secondary before:transition-all before:duration-500 hover:text-primary hover:before:left-0 hover:before:w-full"
               >
-                <span class="relative z-10">
-                  <a href="../emailSender.html?selected=Élhajlító gépek">
-                    Kérjen ajánlatot
-                  </a>
-                </span>
+                <span class="relative z-10"
+                  ><a href="../ajanlatkeres.html?selected=Élhajlító gépek"
+                    >Kérjen ajánlatot</a
+                  ></span
+                >
               </button>
             </div>
           </div>
@@ -289,238 +273,11 @@
         <div class="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
           <img
             class="rounded-xl h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="../../assets/Adira/adira-PA-front.png"
+            src="../../assets/Adira/adira-ATC-front.png"
             alt=""
           />
         </div>
         <!--   End of Image Section     -->
-      </div>
-    </section>
-    <section class="flex justify-center">
-      <button
-        class="group p-5 cursor-pointer relative text-xl font-normal border-0 flex items-center justify-center bg-transparent text-red-500 h-auto w-[170px] overflow-hidden transition-all duration-100"
-      >
-        <span
-          class="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-red-500 transition-all duration-500"
-        >
-        </span>
-
-        <p
-          class="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200"
-        >
-          Katalógus
-        </p>
-
-        <span
-          class="group-hover:translate-x-0 group-hover:opacity-100 absolute translate-x-full opacity-0 transition-all duration-200"
-          >Letöltés
-        </span>
-
-        <span
-          class="group-hover:w-full absolute right-0 h-full w-5 border-y border-r border-red-500 transition-all duration-500"
-        >
-        </span>
-      </button>
-    </section>
-
-    <section class="flex justify-start md:justify-center overflow-auto">
-      <div class="flex flex-col">
-        <div class="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
-          <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-            <div class="overflow-hidden">
-              <table class="min-w-full">
-                <thead class="bg-gray-100 border-b">
-                  <tr>
-                    <th
-                      scope="col"
-                      class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
-                    >
-                      PA
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
-                    >
-                      13530
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
-                    >
-                      13540
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
-                    >
-                      16030
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
-                    >
-                      16040
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
-                    >
-                      22030
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
-                    >
-                      22040
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="bg-gray-100 border-b">
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
-                    ></td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Kapacitás (kN)
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                  </tr>
-                  <tr class="bg-gray-100 border-b">
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
-                    ></td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Spec
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                  </tr>
-                  <tr class="bg-gray-100 border-b">
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
-                    ></td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Spec
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                  </tr>
-                  <tr class="bg-gray-100 border-b">
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
-                    ></td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Spec
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                    <td
-                      class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
-                    >
-                      Slot
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -537,17 +294,16 @@
             <div>
               <div>
                 <h2 class="text-3xl font-bold tracking-tight text-white">
-                  Rugalmasság és sokoldalúság
+                  Testreszabott az Ön igényeire szabva
                 </h2>
                 <p class="mt-4 text-lg text-gray-300">
-                  A Hexa-C kerettel felszerelt PA présfékek választéka nagyobb
-                  hajlítási pontosságot biztosít, mivel a mozgatható henger
-                  tökéletesen egy vonalban marad a rögzített hengerrel. A
-                  nyomószár helyzetét a HEXA-C keret végein elhelyezett vezetők
-                  folyamatosan ellenőrzik, biztosítva a 0,01 mm-es nyomószár
-                  pozicionálás megismételhetőségét, függetlenül a
-                  tonnatartalomtól, a terhelés helyzetétől vagy az olaj
-                  hőmérsékletétől.
+                  Ez az automatikus szerszámcsere-megoldás a BB hajlítógépet egy
+                  teljes automatizálási folyamattal kombinálja. Ez a rendszer
+                  egyetlen céllal kezeli a hajlításhoz szükséges szerszámokat:
+                  kiválasztja és pozícionálja az automatikus szerszámtárolóban
+                  rendelkezésre álló szerszámokat és szerszámokat, elkerülve a
+                  szerszámok kézi kiválasztását és cseréjét, ami időt takarít
+                  meg a gyártási folyamatokban és növeli a munka hatékonyságát.
                 </p>
               </div>
             </div>
@@ -563,7 +319,7 @@
                   height="486"
                   class="mx-auto rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-auto items-center w-auto max-w-full"
                   style="color: transparent"
-                  src="../../assets/Adira/adira-PA-1.png"
+                  src="../../assets/Adira/adira-ATC-1.png"
                 />
               </div>
             </div>
@@ -584,20 +340,19 @@
                   Főbb jellemzők
                 </h2>
                 <p class="mt-4 text-lg text-gray-300">
-                  Megnövelt visszatérési sebesség (gyorsabb munkaciklus);
+                  Szerszámtároló kezelőfelület a vezérlőrendszeren;
                 </p>
 
                 <p class="mt-4 text-lg text-gray-300">
-                  A Greendrive rendszer a motort nagyon lassan forog, ezáltal
-                  csökkenti a fogyasztást, amikor a kezelő nem nyomja meg a
-                  pedált vagy nem használja a gépet;
+                  A szerszámrendszer és a munkaasztal tisztítása;
                 </p>
                 <p class="mt-4 text-lg text-gray-300">
-                  Az energiafogyasztás jelentős csökkenése;
+                  32 és 52 méter közötti szerszámtárolási kapacitás;
                 </p>
                 <p class="mt-4 text-lg text-gray-300">
-                  Szabványos gép koronázóasztallal, Lazersafe biztonsági
-                  rendszerrel és 4 tengelyes hátmérővel (X/R/Z1/Z2).
+                  Lehetőség van a présprésen lévő szerszám bármelyik
+                  frakciójának cseréjére anélkül, hogy a présprésen elhelyezett
+                  összes frakciót egymás után el kellene távolítani.
                 </p>
               </div>
             </div>
@@ -614,7 +369,7 @@
                   height="486"
                   class="mx-auto rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-auto items-center w-auto max-w-full"
                   style="color: transparent"
-                  src="../../assets/Adira/adira-PA-2.png"
+                  src="../../assets/Adira/adira-ATC-2.png"
                 />
               </div>
             </div>
@@ -632,12 +387,11 @@
             <div>
               <div>
                 <h2 class="text-3xl font-bold tracking-tight text-white">
-                  Az Adira PA előnyei
+                  Az Adira ATC előnyei
                 </h2>
                 <p class="mt-4 text-lg text-gray-300">
-                  A számos tartozék és opcionális felszerelés révén ezek a gépek
-                  rugalmasak, rendkívül sokoldalúak és pontosak. Ideális
-                  megoldást jelentenek az iparágak széles köre számára.
+                  Ez az automatizálási rendszer 1 hajlítógépet (egy) vagy 2
+                  (iker) gépet képes táplálni.
                 </p>
               </div>
             </div>
@@ -653,7 +407,7 @@
                   height="486"
                   class="mx-auto rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-auto items-center w-auto max-w-full"
                   style="color: transparent"
-                  src="../../assets/Adira/adira-PA-3.png"
+                  src="../../assets/Adira/adira-ATC-3.png"
                 />
               </div>
             </div>
@@ -661,7 +415,7 @@
         </div>
       </div>
     </div>
- 
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="../../scripts/main.js"></script>
   </body>
