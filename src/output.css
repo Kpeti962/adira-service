@@ -1130,6 +1130,22 @@ input:checked + .toggle-bg {
   inset: 2.25rem;
 }
 
+.inset-8 {
+  inset: 2rem;
+}
+
+.inset-7 {
+  inset: 1.75rem;
+}
+
+.inset-6 {
+  inset: 1.5rem;
+}
+
+.inset-2 {
+  inset: 0.5rem;
+}
+
 .\!left-auto {
   left: auto !important;
 }
@@ -1192,6 +1208,30 @@ input:checked + .toggle-bg {
 
 .top-1\/2 {
   top: 50%;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-12 {
+  top: -3rem;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
+.-top-16 {
+  top: -4rem;
 }
 
 .isolate {
@@ -1834,6 +1874,10 @@ input:checked + .toggle-bg {
   border-collapse: separate;
 }
 
+.origin-top {
+  transform-origin: top;
+}
+
 .origin-top-left {
   transform-origin: top left;
 }
@@ -1900,6 +1944,26 @@ input:checked + .toggle-bg {
 
 .-skew-x-12 {
   --tw-skew-x: -12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-y-\[-4deg\] {
+  --tw-skew-y: -4deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-y-\[4deg\] {
+  --tw-skew-y: 4deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-y-\[5deg\] {
+  --tw-skew-y: 5deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.skew-y-\[6deg\] {
+  --tw-skew-y: 6deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3156,12 +3220,8 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/assets\/bg-1\.png\'\)\] {
-  background-image: url('../../assets/bg-1.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/bg-1\.png\'\)\] {
-  background-image: url('../assets/bg-1.png');
+.bg-\[url\(\'\.\.\/assets\/bg-1\.svg\'\)\] {
+  background-image: url('../assets/bg-1.svg');
 }
 
 .bg-gradient-to-t {
@@ -3317,6 +3377,11 @@ input:checked + .toggle-bg {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-0\.5 {
@@ -3487,6 +3552,26 @@ input:checked + .toggle-bg {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-left {
@@ -5204,6 +5289,10 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 640px) {
+  .sm\:-top-16 {
+    top: -4rem;
+  }
+
   .sm\:mx-0\.5 {
     margin-left: 0.125rem;
     margin-right: 0.125rem;
@@ -5288,6 +5377,10 @@ input:checked + .toggle-bg {
 
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
   }
 
   .sm\:px-6 {

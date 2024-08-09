@@ -13,13 +13,18 @@
     <title>Hidraulikus élhajlító</title>
     <style>
       .striped-background {
-        background-image: url('../../assets/bg.png');
+        background-image: url('../../assets/bg.svg');
+        background-color: rgba(0, 0, 0, 0.1);
+        background-blend-mode: darken; 
       }
     </style>
   </head>
   <body
     class="font-roboto striped-background body box-border w-full md:overflow-auto"
   >
+ 
+
+  
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -34,7 +39,7 @@
         d="M3 4.5h14.25M3 9h9.75M3 13.5h5.25m5.25-.75L17.25 9m0 0L21 12.75M17.25 9v12"
       />
     </svg>
-
+   
     <header>
       <div
         class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
@@ -656,7 +661,7 @@
         </div>
       </div>
     </div>
-
+ 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="../../scripts/main.js"></script>
   </body>

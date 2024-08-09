@@ -1,22 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="213" viewBox="0 0 1080 213">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="210" viewBox="0 0 1080 210">
   <defs>
     <clipPath id="clip-Web_1920_1">
-      <rect width="1080" height="213"/>
+      <rect width="1080" height="210"/>
     </clipPath>
   </defs>
   <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
-    <rect width="1080" height="213" fill="#fff"/>
-    <g id="Group_1" data-name="Group 1" transform="translate(0 -812)">
-      <g id="Group_2" data-name="Group 2" transform="translate(0 -3)">
-        <g id="Polygon_1" data-name="Polygon 1" transform="translate(-1555 858)" fill="#d98723">
-          <path d="M 3101.823974609375 169.5 L 9.176074981689453 169.5 L 1555.499633789063 0.5028499364852905 L 3101.823974609375 169.5 Z" stroke="none"/>
-          <path d="M 1555.499633789063 1.006088256835938 L 18.355712890625 169 L 3092.644287109375 169 L 1555.499633789063 1.006088256835938 M 1555.499633789063 0 L 3111 170 L 0 170 L 1555.499633789063 0 Z" stroke="none" fill="#d98723"/>
-        </g>
-        <g id="Polygon_2" data-name="Polygon 2" transform="translate(2636 982) rotate(180)" fill="#0d2542">
-          <path d="M 3101.823974609375 169.5 L 9.176076889038086 169.5 L 1555.5 0.5028499364852905 L 3101.823974609375 169.5 Z" stroke="none"/>
-          <path d="M 1555.5 1.006088256835938 L 18.355712890625 169 L 3092.644287109375 169 L 1555.5 1.006088256835938 M 1555.5 0 L 3111 170 L 0 170 L 1555.5 0 Z" stroke="none" fill="#d98723"/>
-        </g>
-      </g>
+    <rect width="1080" height="210" fill="#fff"/>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(-1555 40)" fill="#d98723">
+      <path d="M 3101.823974609375 169.5 L 9.176076889038086 169.5 L 1555.5 0.5028499364852905 L 3101.823974609375 169.5 Z" stroke="none"/>
+      <path d="M 1555.5 1.006088256835938 L 18.355712890625 169 L 3092.644287109375 169 L 1555.5 1.006088256835938 M 1555.5 0 L 3111 170 L 0 170 L 1555.5 0 Z" stroke="none" fill="#d98723"/>
     </g>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(2636 170) rotate(180)" fill="#0d2542">
+      <path d="M 3101.823974609375 169.5 L 9.176076889038086 169.5 L 1555.5 0.5028499364852905 L 3101.823974609375 169.5 Z" stroke="none"/>
+      <path d="M 1555.5 1.006088256835938 L 18.355712890625 169 L 3092.644287109375 169 L 1555.5 1.006088256835938 M 1555.5 0 L 3111 170 L 0 170 L 1555.5 0 Z" stroke="none" fill="#0d2542"/>
+    </g>
+    <path id="Path_1" data-name="Path 1" d="M0,0,928.984,101.406l20.058,2.189L1081,118" transform="translate(-0.5 62.5)" fill="none" stroke="#0d2542" stroke-width="2"/>
+    <path id="Path_2" data-name="Path 2" d="M0,0,928.984,101.406l20.058,2.189L1081,118" transform="translate(0.5 40.5)" fill="none" stroke="#d98723" stroke-width="2"/>
   </g>
 </svg>
