@@ -121,42 +121,41 @@
               </div>
             </div>
             <div
-            class="relative p-3 text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              class="relative p-3 text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
             >
-            <a href="./components/ajanlatkeres.html">
-              <span>Ajánlatkérés</span>
-            </a>
-          </div>
-          <div
-            class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-          >
-            <span>Kapcsolat</span>
-          </div>
+              <a href="./components/ajanlatkeres.html">
+                <span>Ajánlatkérés</span>
+              </a>
+            </div>
+            <div
+              class="relative p-3 text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+            >
+              <span>Kapcsolat</span>
+            </div>
           </ul>
         </div>
         <div class="flex flex-col md:hidden">
           <div class="flex flex-col justify-center">
             <div class="relative py-3 sm:max-w-xl mx-auto">
-              <nav x-data="{ open: false }">
+              <nav class="nav" x-data="{ open: false }">
                 <button
                   id="menuButton"
-                  class="tham w-14 h-14 relative focus:outline-none bg-teal-600 rounded"
-                  @click="open = !open"
+                  class="tham w-14 h-14 relative focus:outline-none bg-secondary rounded hover:bg-yellow-500"
                 >
                   <div
                     class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
                   >
                     <span
-                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
-                      :class="{'rotate-45': open,' -translate-y-1.5': !open }"
+                      class="block absolute h-0.5 w-7 text-white bg-current"
+                      :class="{'rotate-0': open,' -translate-y-1.5': !open }"
                     ></span>
                     <span
-                      class="block absolute h-0.5 w-5 text-white bg-current transform transition duration-500 ease-in-out"
+                      class="block absolute h-0.5 w-5 text-white bg-current"
                       :class="{'opacity-0': open } "
                     ></span>
                     <span
-                      class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out"
-                      :class="{'-rotate-45': open, ' translate-y-1.5': !open}"
+                      class="block absolute h-0.5 w-7 text-white bg-current"
+                      :class="{'-rotate-0': open, ' translate-y-1.5': !open}"
                     ></span>
                   </div>
                 </button>
@@ -183,19 +182,19 @@
                   <span>Alkatrészek</span>
                 </a>
               </div>
-             
+
               <div
-              class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
-              <a href="./components/ajanlatkeres.html">
-                <span>Ajánlatkérés</span>
-              </a>
-            </div>
-            <div
-              class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
-            >
-              <span>Kapcsolat</span>
-            </div>
+                <a href="./components/ajanlatkeres.html">
+                  <span>Ajánlatkérés</span>
+                </a>
+              </div>
+              <div
+                class="relative p-3 text-primary hover:text-primary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                <span>Kapcsolat</span>
+              </div>
             </ul>
           </div>
         </div>
