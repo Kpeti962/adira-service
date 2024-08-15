@@ -1756,6 +1756,11 @@ input:checked + .toggle-bg {
   min-width: 100%;
 }
 
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -3479,6 +3484,10 @@ input:checked + .toggle-bg {
   padding-bottom: 0.4rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-2\.5 {
   padding-bottom: 0.625rem;
 }
@@ -3637,10 +3646,6 @@ input:checked + .toggle-bg {
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .font-medium {

@@ -475,14 +475,17 @@
     />
 
     <section class="bg-white">
-      <div class="servicePage relative w-full hover:opacity-95 h-[320px] border-none" id="home">
+      <div
+        class="servicePage relative w-full hover:opacity-95 h-[320px] border-none"
+        id="home"
+      >
         <div
-          class="absolute inset-0 opacity-70 transform  skew-y-[6deg] origin-top"
+          class="absolute inset-0 opacity-70 transform skew-y-[6deg] origin-top"
         >
           <img
             src="../assets/service/service-0.png"
             alt="Background Image"
-            class="object-cover object-bottom w-full h-full "
+            class="object-cover object-bottom w-full h-full"
           />
         </div>
         <div
@@ -498,11 +501,10 @@
               Precíz szerviz minden gépedhez
             </p>
             <div class="text-center">
-
               <a
-              href="./components/ajanlatkeres.html?selected=Szerviz"
-              class="px-6 py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-secondary transition duration-200"
-              >Kérj ajánlatot</a
+                href="./components/ajanlatkeres.html?selected=Szerviz"
+                class="px-6 py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-secondary transition duration-200"
+                >Kérj ajánlatot</a
               >
             </div>
           </div>
@@ -538,7 +540,11 @@
           <div>
             <div class="w-full md:flex md:justify-evenly">
               <div class="flex justify-center">
-                <img src="./assets/email.svg" class="w-[30px] mr-1 md:mr-3" alt="" />
+                <img
+                  src="./assets/email.svg"
+                  class="w-[30px] mr-1 md:mr-3"
+                  alt=""
+                />
               </div>
               <h2 class="items-center">valami@granit-mill.hu</h2>
             </div>
@@ -564,7 +570,11 @@
           <div>
             <div class="w-full md:flex md:justify-evenly">
               <div class="flex justify-center">
-                <img src="./assets/email.svg" class="w-[30px] mr-1 md:mr-3" alt="" />
+                <img
+                  src="./assets/email.svg"
+                  class="w-[30px] mr-1 md:mr-3"
+                  alt=""
+                />
               </div>
               <h2 class="items-center">valami@granit-mill.hu</h2>
             </div>
@@ -910,8 +920,16 @@
       const carouselSlide = document.querySelector('.carousel-slide');
       const carouselItems = document.querySelectorAll('.carousel-item');
       const indicators = document.querySelectorAll('.carousel-indicator');
+      const serviceButton = document.querySelector('.serviceButton');
+      const serviceButton2 = document.querySelector('.serviceButton2');
+      const servicePage = document.querySelector('.servicePage');
       let counter = 0;
       let intervalId;
+
+      serviceButton.addEventListener('click', () => {
+        servicePage.scrollIntoView({ behavior: 'smooth' });
+        console.log('siker');
+      });
 
       function showSlide(index) {
         if (index >= carouselItems.length) {
