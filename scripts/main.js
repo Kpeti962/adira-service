@@ -2,7 +2,7 @@ const tham = document.querySelector('.tham');
 const thamnav = document.querySelector('.thamnav');
 const body = document.querySelector('.body');
 const overlay = document.querySelector('.overlay');
-const arrowUp = document.querySelector('.arrowUp');
+
 const nav = document.querySelector('.nav');
 const contactButton = document.querySelector('.contactButton');
 const contactButton2 = document.querySelector('.contactButton2');
