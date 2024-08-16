@@ -27,13 +27,13 @@
         box-sizing: border-box;
       }
       .carousel-item img {
-        width: 70%;
+        width: 100%;
         margin: auto;
         height: auto;
       }
       .carousel-indicators {
         position: absolute;
-        bottom: 20px;
+        bottom: 50px;
         left: 20px;
 
         display: flex;
@@ -50,13 +50,13 @@
         background-color: rgba(165, 165, 165, 0.9);
       }
       button {
-        width: 50px; /* Increase width */
-        height: 50px; /* Increase height */
-        padding: 10px; /* Add padding */
+        width: 50px;
+        height: 50px;
+        padding: 10px;
       }
       svg {
-        width: 24px; /* Adjust SVG size */
-        height: 24px; /* Adjust SVG size */
+        width: 24px;
+        height: 24px;
       }
 
       .clip-custom {
@@ -91,32 +91,32 @@
                 >
                   <div class="py-1">
                     <a
-                      href="./components/machineGroups/hajlitogepek.html"
+                      href="./components/gepcsoportok/hajlitogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Élhajlító gépek</a
                     >
                     <a
-                      href="./components/machineGroups/lemezvago-ollok.html"
+                      href="./components/gepcsoportok/lemezvago-ollok.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lemezvágó ollók</a
                     >
                     <a
-                      href="./components/machineGroups/2D-lezervagogepek.html"
+                      href="./components/gepcsoportok/2D-lezervagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >2D-Lézervágógépek</a
                     >
                     <a
-                      href="./components/machineGroups/3D-lezervagogepek.html"
+                      href="./components/gepcsoportok/3D-lezervagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >3D-Lézervágógépek</a
                     >
                     <a
-                      href="./components/machineGroups/lezersugaras-csovagogepek.html"
+                      href="./components/gepcsoportok/lezersugaras-csovagogepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lézersugaras csövágó gépek</a
                     >
                     <a
-                      href="./components/machineGroups/lezerhegeszto-gepek.html"
+                      href="./components/gepcsoportok/lezerhegeszto-gepek.html"
                       class="block px-4 py-2 text-sm text-primary hover:text-secondary font-bold cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400"
                       >Lézerhegesztő gépek</a
                     >
@@ -285,11 +285,16 @@
               <div
                 class="carousel-item flex flex-col-reverse sm:flex-row align-middle"
               >
-                <img
-                  class="w-2/4 hover:cursor-pointer custom-rounded"
+              <div class="flex w-1/2 m-auto">
+
+                <a href="./components/gepek/hidraulikus-elhajlito.html">
+                  <img
+                  class="w-2/4 hover:cursor-pointer rounded-md lg:custom-rounded"
                   src="./assets/Adira/adira-PA-1.png"
                   alt="Image 1"
-                />
+                  />
+                </a>
+              </div>
                 <div class="w-full sm:w-2/4 flex flex-col justify-center">
                   <h1 class="w-full text-white text-center">Adira PA</h1>
                   <div
@@ -308,11 +313,16 @@
               <div
                 class="carousel-item flex flex-col-reverse sm:flex-row align-middle"
               >
-                <img
-                  class="w-2/4 hover:cursor-pointer custom-rounded"
+              <div class="flex w-1/2 m-auto">
+
+                <a href="./components/gepek/hibrid-elhajlito.html">
+                  <img
+                  class="w-2/4 hover:cursor-pointer rounded-md lg:custom-rounded"
                   src="./assets/Adira/adira-PF-1.png"
                   alt="Image 2"
-                />
+                  />
+                </a>
+              </div>
                 <div class="w-full sm:w-2/4 flex flex-col justify-center">
                   <h1 class="w-full text-white text-center">Adira PF</h1>
                   <div
@@ -329,11 +339,16 @@
               <div
                 class="carousel-item flex flex-col-reverse sm:flex-row align-middle"
               >
-                <img
-                  class="w-2/4 hover:cursor-pointer custom-rounded"
+              <div class="flex w-1/2 m-auto">
+
+                <a href="./components/gepek/elektromos-elhajlito.html">
+                  <img
+                  class="w-2/4 hover:cursor-pointer rounded-md lg:custom-rounded"
                   src="./assets/Adira/adira-BB-1.png"
                   alt="Image 3"
-                />
+                  />
+                </a>
+              </div>
                 <div class="w-full sm:w-2/4 flex flex-col justify-center">
                   <h1 class="w-full text-white text-center">Adira BB</h1>
                   <div
@@ -350,11 +365,16 @@
               <div
                 class="carousel-item flex flex-col-reverse sm:flex-row align-middle"
               >
-                <img
-                  class="w-2/4 hover:cursor-pointer custom-rounded"
+              <div class="flex w-1/2 m-auto">
+
+                <a href="./components/gepek/automatizalas.html">
+                  <img
+                  class="w-2/4 hover:cursor-pointer rounded-md lg:custom-rounded"
                   src="./assets/Adira/adira-ATC-1.png"
                   alt="Image 4"
-                />
+                  />
+                </a>
+              </div>
                 <div class="w-full sm:w-2/4 flex flex-col justify-center">
                   <h1 class="w-full text-white text-center">Automatizálás</h1>
                   <div
@@ -369,11 +389,16 @@
               <div
                 class="carousel-item flex flex-col-reverse sm:flex-row align-middle"
               >
-                <img
-                  class="w-2/4 hover:cursor-pointer custom-rounded"
+              <div class="flex w-1/2 m-auto">
+
+                <a href="./components/gepek/heavy-duty.html">
+                  <img
+                  class="w-2/4 hover:cursor-pointer rounded-md lg:custom-rounded"
                   src="./assets/Adira/adira-PH-1.png"
                   alt="Image 5"
-                />
+                  />
+                </a>
+              </div>
                 <div class="w-full sm:w-2/4 flex flex-col justify-center">
                   <h1 class="w-full text-white text-center">Adira PH</h1>
                   <div
@@ -391,12 +416,16 @@
               </div>
               <div
                 class="carousel-item flex flex-col-reverse sm:flex-row align-middle"
-              >
-                <img
-                  class="w-2/4 hover:cursor-pointer custom-rounded"
+              ><div class="flex flex-col justify-center">
+
+                <a href="./components/gepek/tandem.html">
+                  <img
+                  class="w-2/4 hover:cursor-pointer rounded-md lg:custom-rounded"
                   src="./assets/Adira/adira-PF-PH-1.png"
                   alt="Image 6"
-                />
+                  />
+                </a>
+              </div>
                 <div class="w-full sm:w-2/4 flex flex-col justify-center">
                   <h1 class="w-full text-white text-center">Adira Tandem</h1>
                   <div
@@ -413,11 +442,16 @@
               <div
                 class="carousel-item flex flex-col-reverse sm:flex-row align-middle"
               >
-                <img
-                  class="w-2/4 hover:cursor-pointer custom-rounded"
+              <div class="flex w-1/2 m-auto">
+
+                <a href="./components/gepek/hidraulikus-lemezvago.html">
+                  <img
+                  class="w-2/4 hover:cursor-pointer rounded-md lg:custom-rounded"
                   src="./assets/Adira/adira-GV-1.png"
                   alt="Image 7"
-                />
+                  />
+                </a>
+              </div>
                 <div class="w-full sm:w-2/4 flex flex-col justify-center">
                   <h1 class="w-full text-white text-center">Adira GV</h1>
                   <div
@@ -433,7 +467,7 @@
               </div>
             </div>
 
-            <div class="carousel-indicators hidden sm:w-2/4">
+            <div class="carousel-indicators hidden lg:w-2/4">
               <div
                 class="carousel-indicator active hover:bg-orange-400"
                 data-slide="0"
@@ -955,7 +989,7 @@
       }
 
       function startAutoSlide() {
-        intervalId = setInterval(() => showSlide(counter + 1), 5000);
+        intervalId = setInterval(() => showSlide(counter + 1), 45000);
       }
 
       function stopAutoSlide() {

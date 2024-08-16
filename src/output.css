@@ -4393,10 +4393,6 @@ input:checked + .toggle-bg {
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 
-.custom-rounded {
-  border-radius: 0 60px;
-}
-
 .\[overflow-anchor\:none\] {
   overflow-anchor: none;
 }
@@ -5638,6 +5634,10 @@ input:checked + .toggle-bg {
     width: 66.666667%;
   }
 
+  .lg\:w-2\/4 {
+    width: 50%;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
@@ -5723,6 +5723,10 @@ input:checked + .toggle-bg {
   .lg\:grayscale {
     --tw-grayscale: grayscale(100%);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .lg\:custom-rounded {
+    border-radius: 0 40px;
   }
 
   .dark\:lg\:hover\:\[paint-order\:markers\]:hover:is(.dark *) {
