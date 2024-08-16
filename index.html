@@ -928,7 +928,12 @@
 
       serviceButton.addEventListener('click', () => {
         servicePage.scrollIntoView({ behavior: 'smooth' });
-        console.log('siker');
+      });
+      serviceButton2.addEventListener('click', () => {
+        servicePage.scrollIntoView({ behavior: 'smooth' });
+        thamnav.classList.toggle('hidden');
+        overlay.classList.toggle('hidden');
+        body.classList.toggle('overflow-hidden');
       });
 
       function showSlide(index) {

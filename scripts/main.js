@@ -5,7 +5,6 @@ const overlay = document.querySelector('.overlay');
 const arrowUp = document.querySelector('.arrowUp');
 const nav = document.querySelector('.nav');
 const contactButton = document.querySelector('.contactButton');
-
 const contactButton2 = document.querySelector('.contactButton2');
 const contactPage = document.querySelector('.contactPage');
 
@@ -23,14 +22,7 @@ overlay.addEventListener('click', () => {
 });
 
 
-serviceButton2.addEventListener('click', () => {
-  thamnav.classList.toggle('hidden');
-  overlay.classList.toggle('hidden');
-  body.classList.toggle('overflow-hidden');
-  servicePage.scrollIntoView({behavior: "smooth"});
-  
-  
-})
+
 contactButton.addEventListener('click', () => {
   contactPage.scrollIntoView({behavior: "smooth"});
   
