@@ -1684,16 +1684,16 @@ input:checked + .toggle-bg {
   width: 75%;
 }
 
-.w-3\/6 {
-  width: 50%;
-}
-
 .w-32 {
   width: 8rem;
 }
 
 .w-4 {
   width: 1rem;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .w-5 {
@@ -1750,10 +1750,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .min-w-20 {

@@ -7,6 +7,8 @@ const nav = document.querySelector('.nav');
 const contactButton = document.querySelector('.contactButton');
 const contactButton2 = document.querySelector('.contactButton2');
 const contactPage = document.querySelector('.contactPage');
+// Kiválasztjuk az összes elemet, amelyik be fog úszni
+
 
 
 tham.addEventListener('click', () => {

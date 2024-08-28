@@ -14,7 +14,7 @@ function sendMail() {
 
     let datasheet = document.getElementById("checkbox").checked;
 
-    if (datasheet && params.name !== "" && params.subject !== "" && params.tel !== "" && params.email !== "" &&  params.company !== "" && params.message !== "") {
+    if (datasheet && params.name !== "" && params.subject !== "" && params.tel !== "" && params.email !== "" && params.message !== "") {
         emailjs.send("service_vochazd", "template_q5cwc7b", params)
             .then(() => {
                 successAlert.classList.remove("hidden");
@@ -30,7 +30,7 @@ function sendMail() {
         document.getElementById("company").value = "";
         document.getElementById("message").value = "";
         document.getElementById("checkbox").checked = false;
-    } else if (!datasheet || params.name == "" || params.subject == "" || params.tel == "" || params.email == "" ||  params.company == "" || params.message == "") {
+    } else if (!datasheet || params.name == "" || params.subject == "" || params.tel == "" || params.email == "" || params.message == "") {
         wrongAlert.classList.remove("hidden")
 
         setTimeout(() => {
