@@ -1644,6 +1644,22 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -3051,6 +3067,11 @@ input:checked + .toggle-bg {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-e-slate-100 {
+  --tw-border-opacity: 1;
+  border-inline-end-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
 .border-t-transparent {
   border-top-color: transparent;
 }
@@ -4384,26 +4405,6 @@ input:checked + .toggle-bg {
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 
-.after-line {
-  position: relative;
-}
-
-.after-line::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  height: 1px;
-  width: 0;
-  background-color: #fff;
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.after-line:hover::after {
-  width: 100%;
-  left: 0;
-}
-
 .\[overflow-anchor\:none\] {
   overflow-anchor: none;
 }
@@ -4720,14 +4721,6 @@ input:checked + .toggle-bg {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.hover\:underline-offset-1:hover {
-  text-underline-offset: 1px;
-}
-
-.hover\:underline-offset-4:hover {
-  text-underline-offset: 4px;
 }
 
 .hover\:\!opacity-90:hover {
@@ -5561,6 +5554,11 @@ input:checked + .toggle-bg {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
