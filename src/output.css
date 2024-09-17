@@ -1620,10 +1620,6 @@ input:checked + .toggle-bg {
   height: 30px;
 }
 
-.h-\[420px\] {
-  height: 420px;
-}
-
 .h-\[460px\] {
   height: 460px;
 }
@@ -1861,10 +1857,6 @@ input:checked + .toggle-bg {
   border-collapse: separate;
 }
 
-.origin-top {
-  transform-origin: top;
-}
-
 .origin-top-left {
   transform-origin: top left;
 }
@@ -1931,11 +1923,6 @@ input:checked + .toggle-bg {
 
 .-skew-x-12 {
   --tw-skew-x: -12deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-y-\[6deg\] {
-  --tw-skew-y: 6deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2469,6 +2456,15 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-x-28 {
+  -moz-column-gap: 7rem;
+       column-gap: 7rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3420,16 +3416,6 @@ input:checked + .toggle-bg {
   padding-bottom: 0.375rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -3443,6 +3429,11 @@ input:checked + .toggle-bg {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-24 {
@@ -3511,12 +3502,16 @@ input:checked + .toggle-bg {
   padding-top: 0.5rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pt-6 {
@@ -4389,6 +4384,26 @@ input:checked + .toggle-bg {
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 
+.after-line {
+  position: relative;
+}
+
+.after-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.after-line:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 .\[overflow-anchor\:none\] {
   overflow-anchor: none;
 }
@@ -4701,6 +4716,18 @@ input:checked + .toggle-bg {
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(217 135 35 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:underline-offset-1:hover {
+  text-underline-offset: 1px;
+}
+
+.hover\:underline-offset-4:hover {
+  text-underline-offset: 4px;
 }
 
 .hover\:\!opacity-90:hover {
