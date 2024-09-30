@@ -15,7 +15,7 @@ function sendMail() {
     let datasheet = document.getElementById("checkbox").checked;
 
     if (datasheet && params.name !== "" && params.subject !== "" && params.tel !== "" && params.email !== "" && params.message !== "") {
-        emailjs.send("service_vochazd", "template_q5cwc7b", params)
+        emailjs.send("service_0efmopr", "template_iqhgwja", params)
             .then(() => {
                 successAlert.classList.remove("hidden");
                 setTimeout(() => {
