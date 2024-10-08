@@ -1198,6 +1198,10 @@ input:checked + .toggle-bg {
   top: 75%;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1759,6 +1763,26 @@ input:checked + .toggle-bg {
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.min-w-\[12px\] {
+  min-width: 12px;
+}
+
+.min-w-4 {
+  min-width: 1rem;
+}
+
+.min-w-12 {
+  min-width: 3rem;
+}
+
+.min-w-16 {
+  min-width: 4rem;
+}
+
+.min-w-10 {
+  min-width: 2.5rem;
 }
 
 .max-w-6xl {
@@ -3520,6 +3544,14 @@ input:checked + .toggle-bg {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-left {

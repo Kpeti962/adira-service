@@ -15,6 +15,10 @@
     <link rel="icon" type="image/x-icon" href="./assets/logo-fav.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -830,57 +834,56 @@
     </section>
     <section class="py-20 bg-white" id="services">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
-          Munkáink
-        </h2>
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Munkáink</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img
-              src="../assets/service/service-1.png"
-              alt="gránit-mill szerviz"
-              class="w-full sm:h-64 object-cover  transition-all border-e-slate-100"
-            />
+            <a href="../assets/service/service-1.png" data-fancybox="gallery" data-caption="Utólagos pneumatikus szerszámrögzítő rendszer installálása.">
+              <img
+                src="../assets/service/service-1.png"
+                alt="gránit-mill szerviz"
+                class="w-full sm:h-64 object-cover  transition-all border-e-slate-100"
+              />
+            </a>
             <div class="py-2 sm:py-8 px-6 text-center">
-              <p class="text-gray-700 text-base">
-                Utólagos pneumatikus szerszámrögzítő rendszer installálása.
-              </p>
+              <p class="text-gray-700 text-base">Utólagos pneumatikus szerszámrögzítő rendszer installálása.</p>
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img
-              src="../assets/service/service-2.png"
-              alt=""
-              class="w-full sm:h-64 object-cover  transition-all border-e-slate-100"
-            />
+            <a href="../assets/service/service-2.png" data-fancybox="gallery" data-caption="Asztal előfeszítő felújítás.">
+              <img
+                src="../assets/service/service-2.png"
+                alt="asztal előfeszítő felújítás"
+                class="w-full sm:h-64 object-cover transition-all border-e-slate-100"
+              />
+            </a>
             <div class="py-2 sm:py-8 px-6 text-center">
-              <p class="text-gray-700 text-base">
-                Asztal előfeszítő felújítás.
-              </p>
+              <p class="text-gray-700 text-base">Asztal előfeszítő felújítás.</p>
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img
-              src="../assets/service/service-3.png"
-              alt=""
-              class="w-full sm:h-64 object-cover  transition-all border-e-slate-100"
-            />
+            <a href="../assets/service/service-3.png" data-fancybox="gallery" data-caption="Élhajlító szerszámtartók beállítása.">
+              <img
+                src="../assets/service/service-3.png"
+                alt="élhajlító szerszámtartók beállítása"
+                class="w-full sm:h-64 object-cover transition-all border-e-slate-100"
+              />
+            </a>
             <div class="py-2 sm:py-8 px-6 text-center">
-              <p class="text-gray-700 text-base">
-                Élhajlító szerszámtartók beállítása
-              </p>
+              <p class="text-gray-700 text-base">Élhajlító szerszámtartók beállítása</p>
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img
-              src="../assets/service/service-4.png"
-              alt=""
-              class="w-full sm:h-64 object-cover  transition-all border-e-slate-100"
-            />
+            <a href="../assets/service/service-4.png" data-fancybox="gallery" data-caption="Lézervágó gép beüzemelés.">
+              <img
+                src="../assets/service/service-4.png"
+                alt="lézervágó gép beüzemelés"
+                class="w-full sm:h-64 object-cover transition-all border-e-slate-100"
+              />
+            </a>
             <div class="py-2 sm:py-8 px-6 text-center">
               <p class="text-gray-700 text-base">Lézervágó gép beüzemelés</p>
             </div>
           </div>
-         
         </div>
       </div>
     </section>
@@ -1098,7 +1101,7 @@
         </div>
       </section>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script>
       const prevButton = document.getElementById('prev');
