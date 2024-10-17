@@ -3490,6 +3490,10 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.pl-12 {
+  padding-left: 3rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
