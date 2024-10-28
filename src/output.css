@@ -1761,6 +1761,18 @@ input:checked + .toggle-bg {
   min-width: max-content;
 }
 
+.min-w-48 {
+  min-width: 12rem;
+}
+
+.min-w-52 {
+  min-width: 13rem;
+}
+
+.min-w-56 {
+  min-width: 14rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }

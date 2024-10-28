@@ -26,16 +26,16 @@ overlay.addEventListener('click', () => {
 
 
 contactButton.addEventListener('click', () => {
-  contactPage.scrollIntoView({behavior: "smooth"});
-  
-  
+  contactPage.scrollIntoView({ behavior: "smooth" });
+
+
 })
 contactButton2.addEventListener('click', () => {
   thamnav.classList.toggle('hidden');
   overlay.classList.toggle('hidden');
   body.classList.toggle('overflow-hidden');
-  contactPage.scrollIntoView({behavior: "smooth"});
-  
+  contactPage.scrollIntoView({ behavior: "smooth" });
+
 
 })
 
