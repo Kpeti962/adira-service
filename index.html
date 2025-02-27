@@ -50,8 +50,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-   
-    <link rel="alternate" hreflang="hu-hu" href="https://granit-gep.hu">
+
+    <link rel="alternate" hreflang="hu-hu" href="https://granit-gep.hu" />
     <style>
       .carousel-container {
         overflow: hidden;
@@ -106,6 +106,20 @@
     </style>
   </head>
   <body class="body font-roboto bg-primary box-border w-full md:overflow-auto">
+    <div class="infoblokk-container fixed inset-0 flex items-center justify-center z-50">
+      <div class="relative">
+        <img
+          src="./assets/close-circle.svg"
+          alt="széchenyi"
+          class="infoblokk-close absolute top-0 right-0 md:w-8 w-4  cursor-pointer"
+        />
+        <img
+          src="./assets/infoblokk.png"
+          alt="széchenyi"
+          class="infoblokk md:w-[600px] sm:w-[400px] w-[350px]"
+        />
+      </div>
+    </div>
     <header>
       <div
         class="overlay fixed hidden md:hidden w-full h-full top-0 left-0 right-0 bottom-0 bg-slate-400 opacity-50 z-100 cursor-pointer"
@@ -271,22 +285,20 @@
         </div>
       </nav>
     </header>
-    
-    <div class="absolute top-26 z-10 h-42">
-      <img src="./assets/close-circle.svg" alt="széchenyi" class="infoblokk-close absolute md:w-8 sm:w-4 w-2 top-0 right-0 cursor-pointer">
-      <img src="./assets/infoblokk.png" alt="széchenyi" class="infoblokk md:w-72 sm:w-32 w-20">
-    </div>
+
     <div class="relative w-full lg:h-screen 2xl:mb-32">
       <div class="lg:inset-0 lg:opacity-70">
         <video
-        autoplay
-        loop
-        muted
-        preload="none"
-        class="block object-cover object-center min-w-full h-full"
+          autoplay
+          loop
+          muted
+          preload="none"
+          class="block object-cover object-center min-w-full h-full"
         >
-        <source src="./assets/intro-1.mp4" />
+          <source src="./assets/intro-1.mp4" />
+
         </video>
+       
       </div>
     </div>
 
