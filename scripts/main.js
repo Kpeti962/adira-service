@@ -2,6 +2,8 @@ const tham = document.querySelector('.tham');
 const thamnav = document.querySelector('.thamnav');
 const body = document.querySelector('.body');
 const overlay = document.querySelector('.overlay');
+const infoblokk = document.querySelector('.infoblokk');
+const infoblokkclose = document.querySelector('.infoblokk-close');
 
 const nav = document.querySelector('.nav');
 const contactButton = document.querySelector('.contactButton');
@@ -37,6 +39,11 @@ contactButton2.addEventListener('click', () => {
   contactPage.scrollIntoView({ behavior: "smooth" });
 
 
+})
+
+infoblokkclose.addEventListener('click', () => {
+infoblokkclose.classList.add('hidden');
+infoblokk.classList.add('hidden');
 })
 
 
